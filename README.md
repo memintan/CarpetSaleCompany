@@ -1,2 +1,2 @@
-# !!! Project has not been completed yet.
+# !!! Project has been completed with @Ozzy.
 # CarpetSaleCompany
