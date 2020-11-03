@@ -15,7 +15,7 @@ public class CarpetAreaPriceCalApplication {
 
 		Calculator calculator = container.getBean("calculator",Calculator.class);
 
-		System.out.println("calculator.getTotalCarpetCost(Cities.ARLINGTON) = " + calculator.getTotalCarpetCost(Cities.ARLINGTON));
+		System.out.println("calculator.getTotalCarpetCost(Cities.AUSTIN) = " + calculator.getTotalCarpetCost(Cities.AUSTIN));
 	}
 
 }

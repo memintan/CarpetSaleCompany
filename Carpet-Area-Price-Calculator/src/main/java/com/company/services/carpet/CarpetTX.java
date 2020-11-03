@@ -16,7 +16,7 @@ public class CarpetTX implements Carpet {
 
     static {
         sqPriceForCity.put(Cities.DALLAS, new BigDecimal(1.75));
-        sqPriceForCity.put(Cities.AUSTIN, new BigDecimal(1.32));
+        sqPriceForCity.put(Cities.AUSTIN, new BigDecimal(1.35));
         sqPriceForCity.put(Cities.SAN_ANTONIO, new BigDecimal(2.20));
 
 
