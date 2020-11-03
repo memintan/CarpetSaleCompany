@@ -1,6 +1,5 @@
 package com.company.calculator;
 
-
 import com.company.enums.Cities;
 import com.company.interfaces.carpetPrices.Carpet;
 import com.company.interfaces.floorType.Floor;
@@ -29,7 +28,7 @@ public class Calculator {
             throw new Exception("This city does not exist");
         }
 
-        return "Total Cost for Carpet :" + (carpet.getSqFtPrice(city).multiply(floor.getArea()));
+        return "Total Cost for Carpet => " + (carpet.getSqFtPrice(city).multiply(floor.getArea()));
 
     }
 
