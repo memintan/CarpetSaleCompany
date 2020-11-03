@@ -1,5 +1,6 @@
 package com.company.calculator;
 
+
 import com.company.enums.Cities;
 import com.company.interfaces.carpetPrices.Carpet;
 import com.company.interfaces.floorType.Floor;
@@ -12,8 +13,7 @@ import java.math.BigDecimal;
 @Component
 public class Calculator {
 
-
-    @Qualifier("carpetVA")
+    @Qualifier("carpetTX")
     @Autowired
     private Carpet carpet;
 
@@ -22,13 +22,16 @@ public class Calculator {
     private Floor floor;
 
     public String getTotalCarpetCost(Cities city) throws Exception{
+
         BigDecimal cost = carpet.getSqFtPrice(city).multiply(floor.getArea());
 
-        if (cost.compareTo(BigDecimal.ZERO) == 0){
-            throw  new Exception("This city does not exist");
+        if(cost.compareTo(BigDecimal.ZERO)==0){
+            throw new Exception("This city does not exist");
         }
 
-        return "Total Cost for Carpet: "+ cost;
+        return "Total Cost for Carpet :" + (carpet.getSqFtPrice(city).multiply(floor.getArea()));
+
     }
+
 
 }
