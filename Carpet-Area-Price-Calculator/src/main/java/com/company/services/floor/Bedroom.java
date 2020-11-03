@@ -14,6 +14,7 @@ public class Bedroom implements Floor {
 
     @Override
     public BigDecimal getArea() {
+
         return width.pow(2);
     }
 }
