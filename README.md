@@ -1,5 +1,11 @@
-# !!! Project has been completed with @Ozzy.
 # CarpetSaleCompany
+
+## !!! Carpet Area & Price Calculator Project has been completed with @Ozzy.
+
+## UI Template is under the UI module
+=> src/main/resources/template
+
+
 
 
      ***Problem Definition***
