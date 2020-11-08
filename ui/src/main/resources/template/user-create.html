@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -103,8 +103,8 @@
     <!-- left sidebar -->
     <!-- ============================================================== -->
     <div class="nav-left-sidebar sidebar-dark">
-        <div class="menu-list">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="menu-list">
+            <li class="navbar navbar-expand-lg navbar-light">
                 <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
                 <button
                         class="navbar-toggler"
@@ -195,9 +195,13 @@
                                 </ul>
                             </div>
                         </li>
+
+
                     </ul>
                 </div>
-            </nav>
+            </li>
+        </ul>
+        </nav>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -224,6 +228,7 @@
                 <!-- ============================================================== -->
 
                 <div class="row">
+
                     <div class="col-lg-6 col-sm-6">
                         <form>
 
@@ -234,6 +239,7 @@
                                         <input id="firstname" type="text" placeholder="first name" class="form-control">
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label for="lastname" class="col-form-label">Last Name</label>
@@ -249,6 +255,7 @@
                                         <input id="E-Mail" type="text" placeholder="e-mail" class="form-control">
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label for="phone number" class="col-form-label">Phone Number</label>
@@ -264,6 +271,7 @@
                                         <input id="password" type="password" placeholder="password" class="form-control">
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label for="repasword" class="col-form-label">Confirm Your Password</label>
@@ -282,30 +290,33 @@
                                         <label class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Female</span>
                                         </label>
+
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label>Choose a Role</label><br>
                                         <select name="roleid" id="roleid" class="custom-select" required="required">
+                                            <option value="select" selected="selected">Select</option>
                                             <option value="admin">Admin</option>
                                             <option value="manager">Manager</option>
                                             <option value="employee">Employee</option>
                                         </select>
-
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-row">
                                 <div class="col text-right" >
                                     <div class="float-right">
-                                    <button class="btn btn-success text-right rounded-0">Save</button>
+                                        <button class="btn btn-success text-right rounded-0">Save</button>
                                     </div>
                                 </div>
                             </div>
-
                         </form>
-                </div>
+                    </div>
+
                     <div class="col-lg-12 col-sm-12">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -362,11 +373,23 @@
                             </tr>
                             </tbody>
                         </table>
+
+                        <!-- footer -->
+                        <footer class="page-footer font-small blue fixed-bottom">
+                            <div class="footer-copyright text-center py-3">© 2020 Cybertek – All Rights Reserved</div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- end wrapper  -->
-    <!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- end wrapper  -->
+<!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end main wrapper  -->
