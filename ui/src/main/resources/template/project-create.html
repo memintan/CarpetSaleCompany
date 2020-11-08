@@ -1,10 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS --->
+    <link
+            rel="stylesheet"
+            href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/charts/chartist-bundle/chartist.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/charts/morris-bundle/morris.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
+    />
+    <title>Cybertek - Ticketing Project</title>
 </head>
-<body>
 
+<body>
+<!-- ============================================================== -->
+<!-- main wrapper -->
+<!-- ============================================================== -->
+<div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+    <!-- navbar -->
+    <!-- ============================================================== -->
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <a class="navbar-brand" href="https://www.cybertekschool.com/"
+            >Cybertek</a
+            >
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right-top">
+                    <li class="nav-item dropdown nav-user">
+                        <a
+
+                                class="nav-link nav-user-img"
+                                href="#"
+                                id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        >
+
+                            <i class="fa fa-fw fa-home" aria-hidden="true"></i>
+                        </a>
+                        <div
+                                class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2"
+                        >
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">#Name</h5>
+                            </div>
+                            <a class="dropdown-item" href="#"
+                            ><i class="fas fa-user mr-2"></i>Account</a
+                            >
+                            <a class="dropdown-item" href="#"
+                            ><i class="fas fa-power-off mr-2"></i>Logout</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end navbar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- left sidebar -->
+    <!-- ============================================================== -->
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column">
+
+                        <li class="nav-item">
+                            <a
+                                    class="nav-link"
+                                    href="#"
+                                    data-toggle="collapse"
+                                    aria-expanded="false"
+                                    data-target="#submenu-2"
+                                    aria-controls="submenu-2"
+                            ><i class="fa fa-fw fa-user-circle"></i>Administration</a
+                            >
+                            <div id="submenu-2" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="user-create.html"
+                                        >User Create</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="project-create.html"
+                                        >Project Create</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                    class="nav-link"
+                                    href="#"
+                                    data-toggle="collapse"
+                                    aria-expanded="false"
+                                    data-target="#submenu-3"
+                                    aria-controls="submenu-3"
+                            ><i class="fa fa-fw fa-male"></i>Manager</a
+                            >
+                            <div id="submenu-3" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="task-assign.html"
+                                        >Task Assign</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="project-status.html"
+                                        >Project Status</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                    class="nav-link"
+                                    href="#"
+                                    data-toggle="collapse"
+                                    aria-expanded="false"
+                                    data-target="#submenu-4"
+                                    aria-controls="submenu-4"
+                            ><i class="fa fa-fw fa-users"></i>Employee</a
+                            >
+                            <div id="submenu-4" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pending-tasks.html"
+                                        >Pending Task</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="archive.html"
+                                        >Archive</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader  -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" id="top">
+                            <h2 class="pageheader-title">Project Create</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader  -->
+                <!-- ============================================================== -->
+
+                <div class="row">
+
+                    <div class="col-lg-12 col-sm-6">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectName" class="col-form-label">Project Name</label>
+                                        <input id="projectName" type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectCode" class="col-form-label">Project Code</label>
+                                        <input id="projectCode" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Assigned Manager</label>
+                                        <select name="roleId" id="roleId" class="custom-select" required="required">
+                                            <option value="select" selected="selected">Select</option>
+                                            <option value="admin">Manager1</option>
+                                            <option value="manager">Manager2</option>
+                                            <option value="employee">Manager3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="form-group">
+                                        <label for="start">Project Start Date</label><br>
+
+                                        <input type="date" id="start" name="trip-start"
+                                               value="mm/dd/yyyy"
+                                               min="2000-01-01" max="2030-12-31">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="form-group">
+                                        <label for="start">Project End Date</label><br>
+
+                                        <input type="date" id="end" name="trip-start"
+                                               value="mm/dd/yyyy"
+                                               min="2000-01-01" max="2030-12-31">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectDetail">Project Detail</label>
+                                        <textarea class="form-control" id="projectDetail" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header">
+                                    <h2 class="pageheader-title">Project List</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Project Code</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Start / End Date</th>
+                                <th scope="col">Manager</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PRJ001</td>
+                                <td>Human Resource CRM</td>
+                                <td>11.03.2020 - 11.09.2020</td>
+                                <td>Delisa Norre</td>
+                                <td>In Progress</td>
+                                <td class="actions">
+                                    <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                                    <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+                                    <a href=""><button type="button" class="btn btn-info btn-sm">Complete</button></a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PRJ002</td>
+                                <td>Infra Upgrade</td>
+                                <td>11.03.2020 - 11.06.2020</td>
+                                <td>Craig Jark</td>
+                                <td>UAT Testing</td>
+                                <td class="actions">
+                                    <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                                    <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+                                    <a href=""><button type="button" class="btn btn-info btn-sm">Complete</button></a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                        <!-- footer -->
+                        <footer class="page-footer font-small blue fixed-bottom">
+                            <div class="footer-copyright text-center py-3">© 2020 Cybertek – All Rights Reserved</div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- end main wrapper  -->
+<!-- ============================================================== -->
+<!-- Optional JavaScript -->
+<!-- jquery 3.3.1 -->
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<!-- bootstap bundle js -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- slimscroll js -->
+<script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<!-- main js -->
+<script src="assets/libs/js/main-js.js"></script>
+<!-- chart chartist js -->
+<script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+<!-- sparkline js -->
+<script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+<!-- morris js -->
+<script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+<script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+<!-- chart c3 js -->
+<script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+<script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+<script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+<script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
 </html>
