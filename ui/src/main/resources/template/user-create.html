@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -103,8 +103,8 @@
     <!-- left sidebar -->
     <!-- ============================================================== -->
     <div class="nav-left-sidebar sidebar-dark">
-        <nav class="menu-list">
-            <li class="navbar navbar-expand-lg navbar-light">
+        <div class="menu-list">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
                 <button
                         class="navbar-toggler"
@@ -119,6 +119,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-column">
+
                         <li class="nav-item">
                             <a
                                     class="nav-link"
@@ -133,8 +134,7 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="user-create.html"
-                                        >User Create
-                                        </a
+                                        >User Create</a
                                         >
                                     </li>
                                     <li class="nav-item">
@@ -178,7 +178,7 @@
                                     aria-expanded="false"
                                     data-target="#submenu-4"
                                     aria-controls="submenu-4"
-                            ><i class="fab fa-fw fa-wpforms"></i>Employee</a
+                            ><i class="fas fa-fw fa-chart-pie"></i>Employee</a
                             >
                             <div id="submenu-4" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
@@ -199,9 +199,7 @@
 
                     </ul>
                 </div>
-            </li>
-        </ul>
-        </nav>
+            </nav>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -219,7 +217,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header" id="top">
-                            <h2 class="pageheader-title">User Create </h2>
+                            <h2 class="pageheader-title">User Create</h2>
                         </div>
                     </div>
                 </div>
@@ -251,15 +249,15 @@
                             <div class="row">
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="E-Mail" class="col-form-label">E-Mail Address</label>
-                                        <input id="E-Mail" type="text" placeholder="e-mail" class="form-control">
+                                        <label for="emailaddress" class="col-form-label">Email Address</label>
+                                        <input id="emailaddress" type="text" placeholder="email address" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="phone number" class="col-form-label">Phone Number</label>
-                                        <input id="phone number" type="text" placeholder="phone number" class="form-control">
+                                        <label for="phonenumber" class="col-form-label">Phone Number</label>
+                                        <input id="phonenumber" type="text" placeholder="phone number" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -274,8 +272,8 @@
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="repasword" class="col-form-label">Confirm Your Password</label>
-                                        <input id="repasword" type="password" placeholder="confirm your password" class="form-control">
+                                        <label for="repassword" class="col-form-label">Password</label>
+                                        <input id="repassword" type="password" placeholder="confirm your password" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -296,8 +294,8 @@
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <label>Choose a Role</label><br>
-                                        <select name="roleid" id="roleid" class="custom-select" required="required">
+                                        <label>Choose a Role</label>
+                                        <select name="roleId" id="roleId" class="custom-select" required="required">
                                             <option value="select" selected="selected">Select</option>
                                             <option value="admin">Admin</option>
                                             <option value="manager">Manager</option>
@@ -307,10 +305,10 @@
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="col text-right" >
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-12">
                                     <div class="float-right">
-                                        <button class="btn btn-success text-right rounded-0">Save</button>
+                                        <button type="button" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -387,9 +385,9 @@
 
         <!-- ============================================================== -->
     </div>
-<!-- ============================================================== -->
-<!-- end wrapper  -->
-<!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end main wrapper  -->
